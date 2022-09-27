@@ -1,3 +1,1 @@
-##Practicing Markdown##
-#Introduction#
-*Hello*, this is **Anushka!**
+Hello, this is Anushka!
