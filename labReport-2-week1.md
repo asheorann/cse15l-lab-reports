@@ -6,7 +6,7 @@ I previously had Visual Studio Code downloaded for CSE 11. However, in the follo
 
 
 This below is the visual when you open VS Code (there is perhaps a little bit of a different picture when you open it up for the first time, however, once you have created a new file from the top right corner the picture below is how your screen should look. 
-![](2022-09-26%20(1).png)
+![](pictures%20for%20lab%20report%202/2022-09-28%20(2).png)
 
 **Step 2: Connect Remotely**  
 In this I opened up VS Code and typed in: “ssh cs15lfa22qs@ieng6.ucsd.edu”; after this input it asked for my password. I had tried to change the password without changing my TritonLink password, however, that did not work (even after waiting for an hour); therefore, I changed my entire password and tried to log in again—which was successful. Below, I have included the screenshots of me signing in.
