@@ -115,6 +115,7 @@ Input: Following is the picture of the test/input for the method
 ![](pictures%20for%20lab%20report%202/listtest.png)
 
 Code: 
+
 '
     static List<String> merge(List<String> list1, List<String> list2) {
     List<String> result = new ArrayList<>();
@@ -139,8 +140,7 @@ Code:
     }
     return result;
   }
-
-  '
+'
 
 **Symptom**
 The test did not run for a while and when it did it produced the following output
