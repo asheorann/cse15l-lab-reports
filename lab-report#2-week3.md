@@ -116,8 +116,7 @@ Input: Following is the picture of the test/input for the method
 
 Code: 
 
-'
-    static List<String> merge(List<String> list1, List<String> list2) {
+'   static List<String> merge(List<String> list1, List<String> list2) {
     List<String> result = new ArrayList<>();
     int index1 = 0, index2 = 0;
     while(index1 < list1.size() && index2 < list2.size()) {
