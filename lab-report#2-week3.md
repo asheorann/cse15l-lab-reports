@@ -110,3 +110,43 @@ Code:
 In this example the bug itself was quite simple. The programmer had switched the new array and the array multiple times. It should be the new arrays values being set in the for loop and the new array being printed in the end. In this case no new values were added into the new array so that is why the error said the array length differed. 
 
 ##EXAMPLE 2##
+**Failure Inducing Input**
+Input: Following is the picture of the test/input for the method
+![](pictures%20for%20lab%20report%202/listtest.png)
+
+Code: 
+'
+    static List<String> merge(List<String> list1, List<String> list2) {
+    List<String> result = new ArrayList<>();
+    int index1 = 0, index2 = 0;
+    while(index1 < list1.size() && index2 < list2.size()) {
+      if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
+        result.add(list1.get(index1));
+        index1 += 1;
+      }
+      else {
+        result.add(list2.get(index2));
+        index2 += 1;
+      }
+    }
+    while(index1 < list1.size()) {
+      result.add(list1.get(index1));
+      index1 += 1;
+    }
+    while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index2 += 1;
+    }
+    return result;
+  }
+
+  '
+
+**Symptom**
+The test did not run for a while and when it did it produced the following output
+![](pictures%20for%20lab%20report%202/erroroutput2pic.png)
+
+**Fixed Bug + Description**
+Fixed Bug: ![](pictures%20for%20lab%20report%202/fixed%20code.png)
+Fixed Output: ![](pictures%20for%20lab%20report%202/correctOutput.png)
+In this example the bug itself was quite simple. Instead of aggregating the index2 in the while loop for index 2 after both lists have been merged (and then there are a few extra as length might not be exactly even). In this case index 2 would stay the same and new objects would continually be created while index 1 continues to +=1, this is essentially an infinite loop as index 2 will always stay less than list2size if it was less initially. Further, as there is no limit on index1 it will continue growing forever, making this an infinite loop.
