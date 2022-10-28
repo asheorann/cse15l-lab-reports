@@ -92,8 +92,8 @@ There are no new methods called or values created, however, if a user does not a
 
 **Failure Inducing Input**
 Input: {5, 4, 3, 2, 1};
-Code: 
-'
+Code:
+```
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
@@ -101,7 +101,7 @@ Code:
     }
     return arr;
   }
-  '
+ ```
 **Symptom**
 ![](week%203%20pictures/2022-10-14%20(6).png)
 
@@ -109,14 +109,13 @@ Code:
 ![](week%203%20pictures/2022-10-14%20(7).png)
 In this example the bug itself was quite simple. The programmer had switched the new array and the array multiple times. It should be the new arrays values being set in the for loop and the new array being printed in the end. In this case no new values were added into the new array so that is why the error said the array length differed. 
 
-##EXAMPLE 2##
+## EXAMPLE 2
 **Failure Inducing Input**
 Input: Following is the picture of the test/input for the method
 ![](pictures%20for%20lab%20report%202/listtest.png)
 
 Code: 
-
-'
+```
     static List<String> merge(List<String> list1, List<String> list2) {
     List<String> result = new ArrayList<>();
     int index1 = 0, index2 = 0;
@@ -140,7 +139,7 @@ Code:
     }
     return result;
   }
-'
+```
 
 **Symptom**
 The test did not run for a while and when it did it produced the following output
@@ -150,3 +149,5 @@ The test did not run for a while and when it did it produced the following outpu
 Fixed Bug: ![](pictures%20for%20lab%20report%202/fixed%20code.png)
 Fixed Output: ![](pictures%20for%20lab%20report%202/correctOutput.png)
 In this example the bug itself was quite simple. Instead of aggregating the index2 in the while loop for index 2 after both lists have been merged (and then there are a few extra as length might not be exactly even). In this case index 2 would stay the same and new objects would continually be created while index 1 continues to +=1, this is essentially an infinite loop as index 2 will always stay less than list2size if it was less initially. Further, as there is no limit on index1 it will continue growing forever, making this an infinite loop.
+
+Thank you for reading my blog!!
