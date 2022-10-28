@@ -109,7 +109,7 @@ Code:
 ![](week%203%20pictures/2022-10-14%20(7).png)
 In this example the bug itself was quite simple. The programmer had switched the new array and the array multiple times. It should be the new arrays values being set in the for loop and the new array being printed in the end. In this case no new values were added into the new array so that is why the error said the array length differed. 
 
-##EXAMPLE 2##
+## EXAMPLE 2
 **Failure Inducing Input**
 Input: Following is the picture of the test/input for the method
 ![](pictures%20for%20lab%20report%202/listtest.png)
