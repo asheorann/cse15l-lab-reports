@@ -4,6 +4,7 @@
 Explanation: This command finds files with 777 permissions. 777 permission are the ability to read, write and execute permission to the owner, group and public. We are able to add different codes at the end of perm in order to find files with different codes. This is useful as many times we have certain files that are specfically for public use but may be scattered throughout different folders; through finding files like this we can make changes to groups of files with this specific access all at once. This would be useful in a government setting or enterprise situation. The following are three examples of inputs and outputs using -perm 777. 
 
 **Example 1**
+
 Input:
 ```
 [cs15lfa22qs@ieng6-201]:911report:199$ find -perm 777
@@ -14,6 +15,7 @@ Output:
 ```
 
 **Example 2**
+
 Input:
 ```
 [cs15lfa22qs@ieng6-201]:911report:200$ cd ..
@@ -33,6 +35,7 @@ Output:
 ```
 
 **Example 3**
+
 Input:
 ```
 [cs15lfa22qs@ieng6-201]:plos:207$ cd ..
@@ -112,7 +115,7 @@ Output:
 ## Implementation 3: find -size +<X>b/-<X>b ##
 **Explanation**: Through this variation of the find command one can find files with with size larger than something, smaller than a size or in between a range. In this case I am using b which stands for bytes, but one can also use M, G etc. to represent different byte sizes. This is also a useful command as many times we can characterize files by their sizes, i.e. can infer to divide up content when we do not have any pattern on name etc. solely by thier expected size. This can truly help us find files through size pattern when we don't have other information. 
 
-**Example 1: finding files bigger thatn 500 bytes**
+**Example 1: finding files bigger that 500 bytes**
 
 Input:
 ```
@@ -142,7 +145,7 @@ Output:
 ./Media/Lawyer_Web_Survey.txt
 ./Media/Self-Help_Website.txt
 ```
-**Example 3: finding files between **
+**Example 3: finding files between**
 
 Input:
 ```
