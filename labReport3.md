@@ -70,7 +70,6 @@ Input:
 
 Output:
 ```
-.
 ./chapter-1.txt
 ./chapter-10.txt
 ./chapter-11.txt
@@ -89,6 +88,37 @@ Output:
 ./chapter-9.txt
 ./preface.txt
 ```
+
+**Example 2:  find ! -empty**
+
+Input:
+```
+[cs15lfa22qs@ieng6-201]:technical:264$ cd 911report
+[cs15lfa22qs@ieng6-201]:911report:265$ find ! -empty
+```
+
+Output:
+```
+.
+./chapter-1.txt   
+./chapter-10.txt  
+./chapter-11.txt  
+./chapter-12.txt  
+./chapter-13.1.txt
+./chapter-13.2.txt
+./chapter-13.3.txt
+./chapter-13.4.txt
+./chapter-13.5.txt
+./chapter-2.txt   
+./chapter-3.txt   
+./chapter-5.txt
+./chapter-6.txt
+./chapter-7.txt
+./chapter-8.txt
+./chapter-9.txt
+./preface.txt
+```
+
 
 **Example 3: do not contain name**
 
